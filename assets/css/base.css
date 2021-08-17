@@ -216,11 +216,28 @@ input[type=checkbox]:checked:after {
 .input_registration:checked ~ .modal-check_registration{
     display: flex;
 }
+<<<<<<< HEAD
 
 .input_registration{
     display: none;
 }
 
+
+.modal-check_login{
+=======
+
+.input_registration{
+>>>>>>> 596dfef5b1e891362aed409e9f955071b36267ec
+    display: none;
+}
+
+.input_login:checked ~ .modal-check_login{
+    display: flex;
+}
+
+.input_login{
+    display: none;
+}
 
 .modal-check_login{
     display: none;
@@ -233,6 +250,3 @@ input[type=checkbox]:checked:after {
 .input_login{
     display: none;
 }
-
-
-

@@ -1,3 +1,7 @@
+.app{
+    overflow: hidden;
+}
+
 .header{
     /* height: 120px; */
     background-image: linear-gradient(0, #ff6533, #f53d2d);
@@ -29,6 +33,7 @@
     align-items: center;
     text-decoration: none;
     color: var(--white-color);
+    cursor: pointer;
 }
 
 .header_item-separation{
@@ -283,6 +288,99 @@
     text-align: center;
 }
 
+/* CSS mobile */
+.header_search-mobile{
+    display: none;
+}
+
+.header_taskbar-mobile-btn{
+    display: none;
+}
+
+.header_taskbar-mobile-btn i{
+    font-size: 2.2rem;
+    color: var(--white-color);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.header_search-mobile-btn{
+    display: none;
+}
+
+.header_search-mobile-btn i{
+    font-size: 2rem;
+    color: var(--white-color);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+
+/* CSS header sort bar */
+.header_sort-bar{
+    height: 44px;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    background-color: var(--white-color);
+    display: none;
+}
+
+.header_sort-item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header_sort-item-link::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 36%;
+    width: 1.2px;
+    transform: translate(0, -50%);
+    background-color: #e8e7e7;;
+}
+
+.header_sort-item:first-child .header_sort-item-link::after{
+    display: none;
+}
+
+.header_sort-item-active .header_sort-item-link{
+    color: var(--primary-color);
+}
+
+.header_sort-item-link{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.header_sort-item-active{
+    position: relative;
+}
+
+.header_sort-item-active::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    position: absolute;
+    border-radius: 2px;
+}
+
+
+
 /* Form Đăng Ký */
 .auth-form{
     width: 400px;
@@ -495,11 +593,13 @@
 .header_cart{
     position: relative;
     margin: 16px 64px 0 64px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header_cart-link{
     font-size: 2.2rem;
     color: var(--white-color);
+    cursor: pointer;
 }
 
 .header_cart_noti{
@@ -1059,6 +1159,58 @@
 }
 
 
+/* Css mobile_category */
+.mobile_category{
+    display: none;
+}
+
+.mobile_category-list{
+    padding: 0;
+    margin: 12px 0px 6px 0;
+    list-style: none;
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mobile_category-list::-webkit-scrollbar{
+    display: none;
+}
+
+.mobile_category-item{
+    flex-shrink: 0;
+    border-radius: 4px;
+    text-align: center;
+    width: 100px;
+    padding: 6px 8px;
+    margin: 0 6px;
+}
+
+.mobile_category-item:nth-of-type(3n){
+    background-color: #87AFD8;
+}
+
+.mobile_category-item:nth-of-type(3n+1){
+    background-color: #76C9BD;
+}
+
+.mobile_category-item:nth-of-type(3n+2){
+    background-color: #88CF81;
+}
+
+.mobile_category-item-link{
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 300;
+    font-size: 1.4rem;
+    height: 32px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -webkit-tap-highlight-color: transparent;
+}
 
 /* Home Filter */
 .home_filter{
@@ -1178,6 +1330,10 @@
 /* CSS Product Item */
 .home-product{
     margin-bottom: 12px;
+}
+
+.home-product-column{
+    margin: 5px 0;
 }
 
 .home-product-item{

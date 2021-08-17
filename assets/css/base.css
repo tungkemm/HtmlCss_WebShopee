@@ -17,44 +17,6 @@ html{
     box-sizing: border-box;
 }
 
-/* Responsive */
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width{
-    width: 100%;
-}
-
-.grid_row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -5px;
-    margin-right: -5px;
-}
-
-/* Test */
-.grid_column-2{
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 16.6667%;
-}
-
-.grid_column-2-4{
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 20%;
-    margin: 5px 0;
-}
-
-.grid_column-10{
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 83.3334%;
-}
-
 /* Animation */
 @keyframes fadeIn{
     from{
@@ -102,6 +64,7 @@ html{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 
 .modal_body{
@@ -197,6 +160,7 @@ input[type=checkbox]:checked:after {
 
 /* CSS pagination */
 .pagination-modify{
+    padding-left: 0;
     margin: 48px 0 32px 0;
 }
 
@@ -204,6 +168,7 @@ input[type=checkbox]:checked:after {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .pagination_item{
@@ -243,8 +208,31 @@ input[type=checkbox]:checked:after {
 }
 
 
+/* CSS khi ấn vào nút Đăng kí và Đăng nhập */
+.modal-check_registration{
+    display: none;
+}
+
+.input_registration:checked ~ .modal-check_registration{
+    display: flex;
+}
+
+.input_registration{
+    display: none;
+}
 
 
+.modal-check_login{
+    display: none;
+}
+
+.input_login:checked ~ .modal-check_login{
+    display: flex;
+}
+
+.input_login{
+    display: none;
+}
 
 
 

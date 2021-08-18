@@ -288,12 +288,13 @@
     text-align: center;
 }
 
+
 /* CSS mobile */
-.header_search-mobile{
+.header_taskbar-mobile-btn{
     display: none;
 }
 
-.header_taskbar-mobile-btn{
+.header_search-mobile-btn{
     display: none;
 }
 
@@ -304,10 +305,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.header_search-mobile-btn{
-    display: none;
-}
-
 .header_search-mobile-btn i{
     font-size: 2rem;
     color: var(--white-color);
@@ -315,7 +312,9 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-
+.header_search-mobile{
+    display: none;
+}
 
 
 /* CSS header sort bar */

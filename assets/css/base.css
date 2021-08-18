@@ -47,6 +47,15 @@ html{
     }
 }
 
+@keyframes moveUp {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-1px);
+    }
+}
+
 /* Modal */
 .modal{
     position: fixed;

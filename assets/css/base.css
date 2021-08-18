@@ -226,16 +226,8 @@ input[type=checkbox]:checked:after {
     display: flex;
 }
 
-.input_registration{
-    display: none;
-}
-
 .input_login:checked ~ .modal-check_login{
     display: flex;
-}
-
-.input_login{
-    display: none;
 }
 
 .modal-check_login{

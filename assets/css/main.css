@@ -316,6 +316,32 @@
     display: none;
 }
 
+/* Css taskbar mobile */
+.header_overlay_full-screen{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 4;
+    animation: fadeIn ease-in 0.25s;
+    display: none;
+}
+
+.header_taskbar-block{
+    position: fixed;
+    top: 0;
+    border-bottom: 0;
+    left: 0;
+    width: 320px;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: var(--white-color);
+    z-index: 5;
+    animation: taskbarMobile linear 0.25s;
+    display: none;
+}
 
 /* CSS header sort bar */
 .header_sort-bar{
@@ -651,7 +677,7 @@
 
 .header_search_infoplus{
     position: absolute;
-    top: 118%;
+    top: 119%;
     left: -6px;
     background-color: var(--white-color);
     border-radius: 3px;

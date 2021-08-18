@@ -1506,7 +1506,7 @@ i.home-product-item_info-liked{
     position: absolute;
     top: 100%;
     left: 0;
-    border-width: 0 calc(38.22px/2) 4px;
+    border-width: 0 calc(38.24px/2) 4px;
     border-style: solid;
     border-color: transparent currentColor;
 }
